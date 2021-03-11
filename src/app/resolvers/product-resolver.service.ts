@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { ActivatedRouteSnapshot, Resolve } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
 import { ProductService } from '../services/product.service';
 
 @Injectable({
@@ -9,7 +8,6 @@ import { ProductService } from '../services/product.service';
 export class ProductResolverService implements Resolve<any> {
 
   constructor(
-    private _http: HttpClient,
     private productService: ProductService
   ) {
     // Empty constructor
