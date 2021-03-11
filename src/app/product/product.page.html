@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ product.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row align-items-center>
+    <ion-card>
+      <img [src]="'assets/images/products/' + product.image" />
+      <ion-card-header>
+        <h4 class="text-danger">฿ {{ product.price }}</h4>
+        <ion-button color="success" expand="block" fill="outline" target="_blank" [href]="product.link">Buy now!</ion-button>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ product.details }}</p>
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+</ion-content>

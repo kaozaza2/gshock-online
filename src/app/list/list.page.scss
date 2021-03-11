@@ -5,3 +5,17 @@
 .p-2 {
   padding: 1rem;
 }
+
+.text-primary {
+  color: #000;
+}
+
+.text-danger {
+  color: var(--ion-color-danger);
+}
+
+@media (prefers-color-scheme: dark) {
+  .text-primary {
+    color: #FFF;
+  }
+}
