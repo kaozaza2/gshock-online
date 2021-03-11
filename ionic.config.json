@@ -1,0 +1,7 @@
+{
+  "name": "GShock",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
