@@ -18,7 +18,11 @@ const routes: Routes = [
     resolve: {
       special: ProductResolverService
     }
+  },  {
+    path: 'about',
+    loadChildren: () => import('./about/about.module').then( m => m.AboutPageModule)
   }
+
 
 ];
 
