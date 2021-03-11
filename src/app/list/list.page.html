@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>GShock Store</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-list>
+      <ion-item-sliding *ngFor="let product of products">
+        <ion-card class="p-2" (click)="openProductPage(product.id)">
+          <img [src]="'assets/images/products/' + product.image" />
+          <ion-label color="danger">฿ {{ product.price }}</ion-label>
+          <h3 class="prompt" style="color: #000;">{{ product.name }}</h3>
+        </ion-card>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-item>
+</ion-content>
